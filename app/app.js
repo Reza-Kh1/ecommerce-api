@@ -1,6 +1,7 @@
 import express from "express";
 import dbConnect from "../config/dbConnect.js";
 import dotenv from "dotenv";
+import cors from "cors"
 import routeUser from "../routes/userRoutes.js";
 import routeProduct from "../routes/productRoutes.js";
 import routeCategory from "../routes/categoryRoutes.js";
@@ -14,6 +15,7 @@ import { gloablHandler, notFound } from "../middlewares/globalErrorHandler.js";
 dotenv.config();
 dbConnect();
 const app = express();
+app.use(cors())
 app.use(express.json());
 
 // route handler
