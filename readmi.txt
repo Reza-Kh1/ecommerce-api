@@ -1,13 +1,6 @@
-First, create the desired file (.env), then put the following information in it
-
-
-
-PORT = 5000
-#  MONGO_URL = mongodb://127.0.0.1:27017
-MONGO_URL =  mongodb://127.0.0.1/myapp
-JWT_KEY=reza8580
-CLOUDINARY_NAME=dexmgemge
-CLOUDINARY_API_KEY=318671121518834
-CLOUDINARY_API_SECRET=ufNxpwMny-d78r9LJBV9-wbupQQ
+I have developed the backend of an e-commerce site using Node.js and the libraries Express.js & Mongoose.
+Within this application, I have implemented authentication and search filters for displaying products.
+I worked with a connection to the MongoDB database, and I have provided the API address as a file 
+that you can import into the Postman application to use and access the endpoints
 
 
